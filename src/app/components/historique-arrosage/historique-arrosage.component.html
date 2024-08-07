@@ -1,0 +1,6 @@
+<h2>Historique d'Arrosage</h2>
+<ul>
+  <li *ngFor="let arrosage of historique">
+    Plante: {{ arrosage.plante }} - Date: {{ arrosage.date | date }} - Quantité: {{ arrosage.quantite }}
+  </li>
+</ul>

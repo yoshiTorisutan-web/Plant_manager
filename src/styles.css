@@ -1,1 +1,197 @@
-/* You can add global styles to this file, and also import other style files */
+/* Ajouter une importation de FontAwesome si ce n'est pas déjà fait */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/* Assurez-vous que le conteneur principal occupe toute la hauteur de la fenêtre */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Assurez-vous que le conteneur principal occupe toute la hauteur de la fenêtre */
+.app-container {
+  display: flex; /* Utiliser Flexbox pour la disposition */
+  min-height: 100vh; /* Hauteur minimale de la fenêtre */
+  flex-direction: row; /* Disposer les éléments en ligne */
+  background-color: #f0f2f5; /* Couleur de fond générale */
+}
+
+/* Styles pour le menu latéral */
+.sidebar {
+  width: 250px; /* Largeur du menu latéral */
+  background-color: #ffffff; /* Couleur de fond du menu */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  display: flex;
+  flex-direction: column; /* Disposer les éléments en colonne */
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* Centrer le logo horizontalement */
+  margin-bottom: 20px; /* Espacement sous le logo */
+}
+
+.logo img {
+  max-width: 80%; /* Limiter la taille du logo */
+  height: auto; /* Conserver les proportions du logo */
+}
+
+/* Style pour le menu de navigation */
+.menu {
+  flex: 1; /* Permet au menu de s'étendre */
+}
+
+.menu ul {
+  list-style: none; /* Enlève les puces de la liste */
+  padding: 0; /* Enlève le padding par défaut */
+}
+
+.menu li {
+  margin-bottom: 10px; /* Espacement entre les éléments du menu */
+}
+
+.menu a {
+  text-decoration: none; /* Enlève le soulignement des liens */
+  color: #333; /* Couleur du texte des liens */
+  font-size: 16px; /* Taille de la police */
+  display: flex; /* Utiliser flexbox pour aligner le texte et le badge */
+  align-items: center; /* Aligne les éléments au centre verticalement */
+  padding: 10px; /* Espacement interne du lien */
+  border-radius: 4px; /* Bords légèrement arrondis */
+}
+
+.menu a:hover {
+    background-color: #7d9a5d88; /* Couleur de fond au survol (vert pastel clair) */
+    color: #ffffff; /* Couleur du texte au survol (vert mousse) */
+  }
+
+.notification-menu .notification-link {
+  position: relative; /* Nécessaire pour le positionnement du badge */
+  background-color: #ffebee; /* Fond rouge clair pour les notifications */
+  color: #c62828; /* Couleur du texte pour contraster avec le fond */
+}
+
+.notification-menu .notification-link .notification-badge {
+  background-color: #f44336; /* Couleur rouge pour le badge */
+  color: white; /* Couleur du texte */
+  border-radius: 12px; /* Cercle parfait */
+  width: 20px; /* Largeur du badge */
+  height: 20px; /* Hauteur du badge */
+  display: flex;
+  align-items: center; /* Centrer le texte verticalement */
+  justify-content: center; /* Centrer le texte horizontalement */
+  font-size: 12px; /* Taille de la police */
+  font-weight: bold; /* Met le texte en gras */
+  margin-left: 8px; /* Espacement à gauche du badge pour le séparer du texte */
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+  flex: 1; /* Permet au contenu de s'étendre */
+  display: flex;
+  flex-direction: column; /* Disposer le header et le contenu en colonne */
+}
+
+.header {
+  background-color: #7d9a5d; /* Couleur de fond du header (vert mousse doux) */
+  color: #ffffff; /* Couleur du texte du header */
+  padding: 20px; /* Espacement interne du header */
+  text-align: center; /* Centrer le texte du header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce sous le header */
+}
+
+.content {
+  flex: 1; /* Permet au contenu de s'étendre */
+  padding: 20px; /* Espacement interne du contenu */
+  background-color: #ffffff; /* Couleur de fond du contenu */
+  border-radius: 8px; /* Bords arrondis du contenu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce autour du contenu */
+}
+
+/* Styles pour la barre de défilement */
+::-webkit-scrollbar {
+  width: 12px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f2f5; /* Couleur de l'arrière-plan de la piste de défilement */
+  border-radius: 10px; /* Bords arrondis de la piste */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7d9a5d; /* Couleur du curseur de défilement (vert mousse doux) */
+  border-radius: 10px; /* Bords arrondis du curseur */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b8e23; /* Couleur du curseur au survol (vert olive foncé) */
+}
+
+/* Styles pour le footer */
+.footer {
+  background-color: #6b8e23; /* Couleur de fond du footer */
+  color: #fff; /* Couleur du texte du footer */
+  padding: 20px 20px; /* Espacement interne */
+  display: flex; /* Utiliser Flexbox pour la disposition */
+  justify-content: space-between; /* Espacement entre les sections */
+  align-items: center; /* Alignement vertical des éléments */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce au-dessus du footer */
+}
+
+.footer-content {
+  display: flex; /* Utiliser Flexbox pour la disposition interne */
+  flex: 1; /* Permet au contenu de s'étendre */
+  justify-content: space-between; /* Espacement entre les sections */
+  align-items: center; /* Alignement vertical des éléments */
+  max-width: 1200px; /* Largeur maximale du footer */
+  margin: 0 auto; /* Centrer le footer horizontalement */
+}
+
+.footer-left,
+.footer-right {
+  display: flex; /* Disposer les éléments en ligne */
+  align-items: center; /* Alignement vertical des éléments */
+}
+
+.footer-logo img {
+  max-width: 50px; /* Taille maximale du logo */
+  height: auto; /* Conserver les proportions du logo */
+}
+
+.footer-left p {
+  margin: 0 0 0 10px; /* Espacement du texte par rapport au logo */
+}
+
+.footer-social {
+  display: flex; /* Disposer les icônes en ligne */
+  align-items: center; /* Alignement vertical des icônes */
+}
+
+.footer-social a {
+  color: #fff; /* Couleur des icônes sociales */
+  text-decoration: none; /* Enlève le soulignement des liens */
+  margin: 0 10px; /* Espacement horizontal entre les icônes */
+  font-size: 20px; /* Taille des icônes sociales */
+}
+
+.footer-social a:hover {
+  color: #e0e0e0; /* Couleur des icônes sociales au survol */
+}
+
+.footer-right {
+  display: flex; /* Disposer les liens en ligne */
+}
+
+.footer-links {
+  display: flex; /* Disposer les liens en ligne */
+}
+
+.footer-links a {
+  color: #fff; /* Couleur des liens */
+  text-decoration: none; /* Enlève le soulignement des liens */
+  margin: 0 15px; /* Espacement horizontal entre les liens */
+  font-size: 14px; /* Taille de la police des liens */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Souligner les liens au survol */
+}

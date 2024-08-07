@@ -1,0 +1,6 @@
+.logo {
+  max-width: 100px; /* Ajuster la taille du logo */
+  height: auto; /* Conserver les proportions */
+  display: block; /* Assurer que l'image occupe une ligne entière */
+  margin: 0 auto; /* Centrer horizontalement */
+}

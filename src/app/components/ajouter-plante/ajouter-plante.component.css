@@ -1,0 +1,54 @@
+/* Styles pour le formulaire d'ajout de plante */
+.add-plant-form {
+    max-width: 600px; /* Largeur maximale du formulaire */
+    margin: auto; /* Centrer le formulaire horizontalement */
+    padding: 20px; /* Espacement interne du formulaire */
+    background: #fff; /* Couleur de fond du formulaire */
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  }
+  
+  h2 {
+    text-align: center; /* Centrer le titre */
+    color: #333; /* Couleur du texte du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+  }
+  
+  /* Style pour les labels des champs de saisie */
+  .add-plant-form label {
+    display: block; /* Chaque label occupe une ligne entière */
+    margin-bottom: 8px; /* Espacement sous le label */
+    font-weight: bold; /* Mettre le label en gras */
+    color: #333; /* Couleur du texte du label */
+  }
+  
+  /* Style pour les champs de saisie */
+  .add-plant-form input[type="text"],
+  .add-plant-form input[type="date"],
+  .add-plant-form input[type="number"],
+  .add-plant-form textarea {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 20px; /* Espacement sous le champ */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 4px; /* Bords légèrement arrondis */
+    box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur totale */
+  }
+  
+  /* Style pour le bouton de soumission */
+  .add-plant-form button {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    padding: 10px; /* Espacement interne du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Bords légèrement arrondis */
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    font-size: 16px; /* Taille de la police du bouton */
+    cursor: pointer; /* Changer le curseur lorsqu'on survole le bouton */
+    transition: background-color 0.3s; /* Animation lors du survol */
+  }
+  
+  .add-plant-form button:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+  }
+  

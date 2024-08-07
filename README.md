@@ -1,27 +1,73 @@
-# PlantManagerBis
+## Gestionnaire de Plantes d'Intérieur
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+# Description
 
-## Development server
+Le Gestionnaire de Plantes d'Intérieur est une application web développée en Angular qui permet aux utilisateurs de gérer et suivre les besoins en eau de leurs plantes d'intérieur. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Cette application offre une interface conviviale pour ajouter des plantes, suivre leurs besoins en arrosage, consulter l'historique des arrosages et recevoir des notifications pour les arrosages.
 
-## Code scaffolding
+# Fonctionnalités
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Ajout de Plantes : Ajouter des plantes avec des informations telles que le nom, l'espèce, la date d'achat, une image, et les besoins en eau (quantité et fréquence).
+- Gestion des Besoins en Eau : Définir et suivre les besoins en eau de chaque plante.
+- Notifications et Rappels : Recevoir des notifications pour arroser les plantes en fonction des besoins définis.
+- Historique d'Arrosage : Consulter l'historique d'arrosage pour suivre l'entretien des plantes.
+- Conseils et Ressources : Accéder à des conseils et des ressources pour l'entretien des plantes.
+- Menu de Navigation : Naviguer entre différentes sections de l'application via un menu latéral avec des notifications visibles.
 
-## Build
+# Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Prérequis
 
-## Running unit tests
+Node.js (version 14.x ou ultérieure)
+Angular CLI (version 12.x ou ultérieure)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Etapes d'installation
 
-## Running end-to-end tests
+1. Clonez le dépôt :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+git clone https://github.com/votre-utilisateur/plant-manager.git
+cd plant-manager
 
-## Further help
+2. Installez les dépendances :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+npm install
+
+3. Démarrez l'application en mode développement :
+
+ng serve
+
+# Structure du projet
+
+Structure du Projet
+- src/app/components : Contient les composants Angular pour les différentes sections de l'application.
+    - ajouter-plante : Composant pour ajouter une nouvelle plante.
+    - liste-plantes : Composant pour afficher la liste des plantes.
+    - historique-arrosage : Composant pour afficher l'historique d'arrosage.
+    - conseils-ressources : Composant pour afficher des conseils et ressources.
+    - notifications : Composant pour afficher et gérer les notifications.
+
+- src/app/services : Contient les services Angular pour la gestion des données.
+    - plante.service.ts : Service pour la gestion des plantes.
+    - notification.service.ts : Service pour la gestion des notifications.
+
+- src/styles.css : Fichier CSS global pour les styles de l'application.
+- src/assets : Contient les ressources statiques comme les images et les logos.
+
+# Contribuer
+
+Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
+
+1. Forkez le dépôt.
+2. Créez une branche pour votre fonctionnalité ou correction de bug (git checkout -b feature/your-feature).
+3. Committez vos changements (git commit -am 'Add new feature').
+4. Poussez la branche (git push origin feature/your-feature).
+5. Ouvrez une Pull Request.
+
+# Auteur
+
+yoshiTorisutan
+
+# Licence
+
+Ce projet est sous licence MIT.

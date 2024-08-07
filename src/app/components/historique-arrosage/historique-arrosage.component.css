@@ -1,0 +1,22 @@
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.history-item h4 {
+  margin: 0;
+  color: #333;
+}
+
+.history-item p {
+  margin: 5px 0;
+}
