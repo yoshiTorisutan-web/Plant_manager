@@ -1,4 +1,4 @@
-# Gestionnaire de Plantes d'Intérieur
+# Gestionnaire de Plantes d'Intérieur 🌿
 
 ## Description
 
