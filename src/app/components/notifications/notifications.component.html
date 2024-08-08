@@ -1,6 +1,7 @@
 <h2>Notifications</h2>
-<ul>
-  <li *ngFor="let notification of notifications">
-    {{ notification }}
-  </li>
-</ul>
+<div class="notifications-grid">
+  <div *ngFor="let notification of notifications" class="notification-card">
+    <div class="notification-badge"></div>
+    <p>{{ notification }}</p>
+  </div>
+</div>

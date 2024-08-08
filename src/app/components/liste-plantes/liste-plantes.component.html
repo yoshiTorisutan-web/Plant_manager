@@ -1,7 +1,22 @@
 <h2>Liste des Plantes</h2>
-<ul>
-  <li *ngFor="let plante of plantes">
-    {{ plante.nom }} - {{ plante.espece }}
-    <!-- Ajoutez des boutons pour voir l'historique ou éditer la plante -->
-  </li>
-</ul>
+<table class="plantes-table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Nom</th>
+      <th>Espèce</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let plante of plantes">
+      <td><img [src]="plante.image" alt="{{ plante.nom }}" class="plante-image"></td>
+      <td>{{ plante.nom }}</td>
+      <td>{{ plante.espece }}</td>
+      <td>
+        <button class="voir-historique" (click)="voirHistorique(plante.id)">Voir Historique</button>
+        <button class="editer-plante" (click)="editerPlante(plante.id)">Éditer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

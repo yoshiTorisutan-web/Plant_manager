@@ -25,3 +25,93 @@
   margin: 10px 0;
   color: #333;
 }
+
+/* Style pour l'image des plantes */
+.plante-image {
+  width: 100px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Style pour les boutons */
+button {
+  background-color: #4CAF50; /* Couleur de fond */
+  border: none; /* Supprimer la bordure par défaut */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none; /* Supprimer la décoration du texte */
+  display: inline-block; /* Afficher les boutons en ligne */
+  font-size: 16px; /* Taille de police */
+  margin: 4px 2px; /* Espacement externe */
+  cursor: pointer; /* Curseur de la souris */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s; /* Animation de la couleur de fond */
+}
+
+button:hover {
+  background-color: #45a049; /* Couleur de fond au survol */
+}
+
+button:focus {
+  outline: none; /* Supprimer le contour de focus */
+}
+
+/* Style pour les boutons "Voir Historique" */
+button.voir-historique {
+  background-color: #2196F3; /* Bleu */
+}
+
+button.voir-historique:hover {
+  background-color: #0b7dda; /* Bleu foncé */
+}
+
+/* Style pour les boutons "Éditer" */
+button.editer-plante {
+  background-color: #f44336; /* Rouge */
+}
+
+button.editer-plante:hover {
+  background-color: #c62828; /* Rouge foncé */
+}
+
+.plantes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.plantes-table th,
+.plantes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.plantes-table th {
+  background-color: #f4f4f4;
+}
+
+.plante-image {
+  width: 50px; /* Ajustez la taille de l'image selon vos besoins */
+  height: auto;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.voir-historique {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.editer-plante {
+  background-color: #008CBA; /* Blue */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+

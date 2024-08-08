@@ -20,3 +20,28 @@
 .history-item p {
   margin: 5px 0;
 }
+
+.historique-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.historique-table th,
+.historique-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.historique-table th {
+  background-color: #f4f4f4;
+}
+
+.historique-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.historique-table tr:hover {
+  background-color: #e2e2e2;
+}

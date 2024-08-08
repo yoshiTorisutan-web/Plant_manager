@@ -2,6 +2,8 @@
 .add-plant-form {
     max-width: 600px; /* Largeur maximale du formulaire */
     margin: auto; /* Centrer le formulaire horizontalement */
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 20px; /* Espacement interne du formulaire */
     background: #fff; /* Couleur de fond du formulaire */
     border-radius: 8px; /* Bords arrondis */
@@ -41,14 +43,16 @@
     padding: 10px; /* Espacement interne du bouton */
     border: none; /* Pas de bordure */
     border-radius: 4px; /* Bords légèrement arrondis */
-    background-color: #4CAF50; /* Couleur de fond du bouton */
+    background-color: #6b8e23; /* Couleur de fond du bouton */
     color: white; /* Couleur du texte du bouton */
     font-size: 16px; /* Taille de la police du bouton */
     cursor: pointer; /* Changer le curseur lorsqu'on survole le bouton */
     transition: background-color 0.3s; /* Animation lors du survol */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
   }
   
   .add-plant-form button:hover {
-    background-color: #45a049; /* Couleur de fond au survol */
+    background-color: #6a8e239a; /* Couleur de fond au survol */
   }
   

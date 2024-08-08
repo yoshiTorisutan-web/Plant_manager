@@ -1,24 +1,25 @@
 <div class="app-container">
   <aside class="sidebar">
     <div class="logo">
-      <img src="leaf.png" alt="Logo" />
+      <img src="../public/Plant manager.png" alt="Logo" />
     </div>
     <nav class="menu">
+      <br>
       <ul>
         <li>
-          <a routerLink="/ajouter" routerLinkActive="active">Ajouter Plante</a>
+          <a routerLink="/ajouter" routerLinkActive="active">Ajouter une plante</a>
         </li>
         <li>
-          <a routerLink="/liste" routerLinkActive="active">Liste des Plantes</a>
+          <a routerLink="/liste" routerLinkActive="active">Liste des plantes</a>
         </li>
         <li>
           <a routerLink="/historique" routerLinkActive="active"
-            >Historique d'Arrosage</a
+            >Historique d'arrosage</a
           >
         </li>
         <li>
           <a routerLink="/conseils" routerLinkActive="active"
-            >Conseils & Ressources</a
+            >Conseils & ressources</a
           >
         </li>
         <li class="notification-menu">
@@ -28,7 +29,7 @@
             class="notification-link"
           >
             Notifications
-            <span class="notification-badge">1</span>
+            <span class="notification-badge">{{ notificationCount }}</span>
           </a>
         </li>
       </ul>
@@ -51,7 +52,7 @@
     <!-- Section de gauche -->
     <div class="footer-left">
       <div class="footer-logo">
-        <img src="leaf.png" alt="Logo" />
+        <img src="../public/leaf.png" alt="Logo" />
       </div>
       <p>&copy; 2024 Plant Manager. Tous droits réservés.</p>
     </div>
@@ -67,14 +68,6 @@
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-instagram"></i>
       </a>
-    </div>
-
-    <!-- Section de droite -->
-    <div class="footer-right">
-      <nav class="footer-links">
-        <a href="/mentions-legales">Mentions légales</a>
-        <a href="/contact">Contact</a>
-      </nav>
     </div>
   </div>
 </footer>

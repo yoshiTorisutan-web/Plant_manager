@@ -1,0 +1,12 @@
+<h2>Éditer la Plante : {{ plante.nom }}</h2>
+<form [formGroup]="planteForm" (ngSubmit)="onSubmit()">
+  <label for="nom">Nom :</label>
+  <input id="nom" formControlName="nom">
+
+  <label for="espece">Espèce :</label>
+  <input id="espece" formControlName="espece">
+
+  <!-- Ajoutez d'autres champs si nécessaire -->
+
+  <button type="submit">Enregistrer</button>
+</form>

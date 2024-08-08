@@ -9,6 +9,7 @@ export interface Plante {
   image: string;
   besoins: { quantite: number; frequence: number };
   dernierArrosage: Date | null;
+  historique?: { date: Date; evenement: string }[];
 }
 
 @Injectable({
@@ -30,5 +31,26 @@ export class PlanteService {
     return of(this.plantes);
   }
 
-  // Autres méthodes pour gérer les plantes...
+  obtenirPlanteParId(id: number): Observable<Plante | undefined> {
+    const plante = this.plantes.find(p => p.id === id);
+    return of(plante);
+  }
+
+  editerPlante(planteModifiee: Plante): Observable<Plante | undefined> {
+    const index = this.plantes.findIndex(p => p.id === planteModifiee.id);
+    if (index !== -1) {
+      this.plantes[index] = planteModifiee;
+      return of(planteModifiee);
+    }
+    return of(undefined); // Renvoie `undefined` si la plante n'a pas été trouvée
+  }
+
+  supprimerPlante(id: number): Observable<boolean> {
+    const index = this.plantes.findIndex(p => p.id === id);
+    if (index !== -1) {
+      this.plantes.splice(index, 1);
+      return of(true); // Renvoie `true` si la suppression a réussi
+    }
+    return of(false); // Renvoie `false` si la plante n'a pas été trouvée
+  }
 }

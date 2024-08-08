@@ -1,6 +1,6 @@
 <h2>Conseils et Ressources</h2>
-<ul>
-  <li *ngFor="let conseil of conseils">
-    {{ conseil }}
-  </li>
-</ul>
+<div class="conseils-grid">
+  <div *ngFor="let conseil of conseils" class="conseil-card">
+    <p>{{ conseil }}</p>
+  </div>
+</div>

@@ -103,7 +103,6 @@ body {
   flex: 1; /* Permet au contenu de s'étendre */
   padding: 20px; /* Espacement interne du contenu */
   background-color: #ffffff; /* Couleur de fond du contenu */
-  border-radius: 8px; /* Bords arrondis du contenu */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce autour du contenu */
 }
 

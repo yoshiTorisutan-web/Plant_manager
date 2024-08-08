@@ -1,0 +1,6 @@
+<h2>Historique de {{ plante.nom }}</h2>
+<ul>
+  <li *ngFor="let evenement of plante.historique">
+    {{ evenement.date | date:'shortDate' }} - {{ evenement.evenement }} <!-- Utilisez 'evenement' si c'est la bonne propriété -->
+  </li>
+</ul>
